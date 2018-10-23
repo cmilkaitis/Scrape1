@@ -7,5 +7,6 @@ module.exports = app => {
     })
   );
 
-  app.get("/api/stocks", stocksController.list);
+  app.get("/api/stocks", stocksController.listAll);
+  //app.get("/api/stocks/:id", stocksController.listSpecific);
 };

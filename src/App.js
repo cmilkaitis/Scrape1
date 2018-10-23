@@ -5,6 +5,7 @@ import Navbar from "./components/layout/Navbar";
 import History from "./components/layout/History";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
+import Scrape from "./components/layout/Scrape";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Route path="/history" component={History} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signup" component={SignUp} />
+            <Route path="/scrape/:item" component={Scrape} />
           </Switch>
         </div>
       </BrowserRouter>
